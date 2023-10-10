@@ -1,0 +1,27 @@
+{
+  "name": "rspack-ts-react-demo",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "lint": "npx oxlint@latest .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.6",
+    "@rspack/core": "0.3.6",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.1",
+    "prettier": "3.0.3",
+    "ts-node": "10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,md,json}": "prettier --write"
+  }
+}
