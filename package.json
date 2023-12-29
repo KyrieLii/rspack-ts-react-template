@@ -6,15 +6,16 @@
     "dev": "rspack serve",
     "build": "rspack build",
     "lint": "npx oxlint@latest .",
-    "prepare": "husky install"
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@rspack/cli": "0.3.6",
-    "@rspack/core": "0.3.6",
+    "@rspack/cli": "0.4.5",
+    "@rspack/core": "0.4.5",
+    "@rspack/plugin-react-refresh": "0.4.5",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "prettier": "3.0.3",
