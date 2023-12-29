@@ -1,4 +1,7 @@
 import { useState } from 'react'
+
+import reactLogo from './assets/react.svg'
+import rspackLogo from './assets/rspack.svg'
 import './App.css'
 
 function App() {
@@ -6,6 +9,13 @@ function App() {
 
   return (
     <div className="App">
+      <a href="https://www.rspack.dev/" target="_blank" rel="noreferrer">
+        <img src={rspackLogo} className="logo" alt="Rspack logo" />
+      </a>
+      <a href="https://reactjs.org" target="_blank" rel="noreferrer">
+        <img src={reactLogo} className="logo react" alt="React logo" />
+      </a>
+
       <h1>Rspack + React + TypeScript</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
