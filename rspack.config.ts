@@ -15,7 +15,9 @@ const config: Configuration = {
     isDev ? new ReactRefreshPlugin() : null,
     new rspack.ProgressPlugin({}),
   ],
-
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
   module: {
     rules: [
       {
@@ -24,6 +26,7 @@ const config: Configuration = {
       },
       {
         test: /\.(jsx?|tsx?)$/,
+        exclude: /[\\/]node_modules[\\/]/,
         use: [
           {
             loader: 'builtin:swc-loader',
