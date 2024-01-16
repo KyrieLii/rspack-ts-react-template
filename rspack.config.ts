@@ -18,6 +18,13 @@ const config: Configuration = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
+  experiments: {
+    rspackFuture: {
+      bundlerInfo: {
+        force: true,
+      },
+    },
+  },
   module: {
     rules: [
       {
