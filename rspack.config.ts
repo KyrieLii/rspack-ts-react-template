@@ -1,8 +1,8 @@
-import { Configuration } from '@rspack/cli'
-import { rspack } from '@rspack/core'
-import ReactRefreshPlugin from '@rspack/plugin-react-refresh'
+import type { Configuration } from '@rspack/cli';
+import { rspack } from '@rspack/core';
+import ReactRefreshPlugin from '@rspack/plugin-react-refresh';
 
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development';
 
 const config: Configuration = {
   entry: {
@@ -59,6 +59,6 @@ const config: Configuration = {
       },
     ],
   },
-}
+};
 
-export default config
+export default config;
