@@ -9,11 +9,11 @@ dependencies:
     specifier: ^0.5.3
     version: 0.5.3
   react:
-    specifier: ^18.2.0
-    version: 18.2.0
+    specifier: 19.0.0-rc-eb259b5d3b-20240605
+    version: 19.0.0-rc-eb259b5d3b-20240605
   react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
+    specifier: 19.0.0-rc-eb259b5d3b-20240605
+    version: 19.0.0-rc-eb259b5d3b-20240605(react@19.0.0-rc-eb259b5d3b-20240605)
 
 devDependencies:
   '@biomejs/biome':
@@ -29,14 +29,11 @@ devDependencies:
     specifier: 0.7.1
     version: 0.7.1(react-refresh@0.14.0)
   '@types/react':
-    specifier: 18.2.0
-    version: 18.2.0
+    specifier: npm:types-react@rc
+    version: /types-react@19.0.0-rc.0
   '@types/react-dom':
-    specifier: 18.2.1
-    version: 18.2.1
-  prettier:
-    specifier: 3.0.3
-    version: 3.0.3
+    specifier: npm:types-react-dom@rc
+    version: /types-react-dom@19.0.0-rc.0
   react-refresh:
     specifier: ^0.14.0
     version: 0.14.0
@@ -508,12 +505,6 @@ packages:
 
   /@types/range-parser@1.2.5:
     resolution: {integrity: sha512-xrO9OoVPqFuYyR/loIHjnbvvyRZREYKLjxV4+dY6v3FQR3stQ9ZxIGkaclF7YhI9hfjpuTbu14hZEy94qKLtOA==}
-    dev: true
-
-  /@types/react-dom@18.2.1:
-    resolution: {integrity: sha512-8QZEV9+Kwy7tXFmjJrp3XUKQSs9LTnE0KnoUb0YCguWBiNW0Yfb2iBMYZ08WPg35IR6P3Z0s00B15SwZnO26+w==}
-    dependencies:
-      '@types/react': 18.2.0
     dev: true
 
   /@types/react@18.2.0:
@@ -1570,10 +1561,6 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /js-tokens@4.0.0:
-    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: false
-
   /json-parse-even-better-errors@2.3.1:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
     dev: true
@@ -1601,13 +1588,6 @@ packages:
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
-
-  /loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-    dependencies:
-      js-tokens: 4.0.0
-    dev: false
 
   /make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
@@ -1821,12 +1801,6 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: true
-
   /process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
@@ -1872,14 +1846,13 @@ packages:
       unpipe: 1.0.0
     dev: true
 
-  /react-dom@18.2.0(react@18.2.0):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  /react-dom@19.0.0-rc-eb259b5d3b-20240605(react@19.0.0-rc-eb259b5d3b-20240605):
+    resolution: {integrity: sha512-KDnYQBjOsyBjUDb0obGL7K2H3rj/6qfKCtKS9biSyR6R+Rstl8nPBVPlyrbcA/96t8ZWavZkU2JfHFveo1cb5A==}
     peerDependencies:
-      react: ^18.2.0
+      react: 19.0.0-rc-eb259b5d3b-20240605
     dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      react: 19.0.0-rc-eb259b5d3b-20240605
+      scheduler: 0.25.0-rc-eb259b5d3b-20240605
     dev: false
 
   /react-refresh@0.14.0:
@@ -1887,11 +1860,9 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@19.0.0-rc-eb259b5d3b-20240605:
+    resolution: {integrity: sha512-Ez1rbLWt97LP31Us+kGIJOjf8iN+pxaIgi8r+8HJ+LnMEndi1bc9JShu4CVstRZDKk2UDkn7a4Ewhk7fdajizQ==}
     engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
     dev: false
 
   /readable-stream@2.3.8:
@@ -1977,10 +1948,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
-    dependencies:
-      loose-envify: 1.4.0
+  /scheduler@0.25.0-rc-eb259b5d3b-20240605:
+    resolution: {integrity: sha512-0uINpZJVamgAUdXJQ2kDSXY3c2LbrAFknJ0neXCzq7y1gfT03TCfxjH24gaTsSK84bdYpD6FOsbciYEfunjA1g==}
     dev: false
 
   /schema-utils@3.3.0:
@@ -2326,6 +2295,18 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: true
+
+  /types-react-dom@19.0.0-rc.0:
+    resolution: {integrity: sha512-wGlQSD6H6EeCxhH+dSip1cPcCU7nNTOwHEr29rjiNtGkUPlmEofOizoQaPMEqQH2V76ME3NLvBDLGajRu3xZOw==}
+    dependencies:
+      '@types/react': 18.2.0
+    dev: true
+
+  /types-react@19.0.0-rc.0:
+    resolution: {integrity: sha512-JFd3qtgXZ+EdHht8WXMPSF231brd6Bu4yLKqyo0JjpzhmjYxJptT6TBh/xFqOhx+ee2Nagj7Ttkh5F/jc49TVQ==}
+    dependencies:
+      csstype: 3.1.2
     dev: true
 
   /typescript@5.0.4:
