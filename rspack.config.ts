@@ -15,6 +15,9 @@ const config: Configuration = {
     isDev ? new ReactRefreshPlugin() : null,
     new rspack.ProgressPlugin({}),
   ],
+  experiments: {
+    css: true,
+  },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
