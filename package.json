@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "rspack serve",
     "build": "rspack build",
-    "lint": "biome format --write",
-    "prepare": "npx husky install"
+    "lint": "biome format --write"
   },
   "dependencies": {
     "@swc/helpers": "^0.5.3",
@@ -15,9 +14,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
-    "@rspack/cli": "1.0.0-alpha.5",
-    "@rspack/core": "1.0.0-alpha.5",
-    "@rspack/plugin-react-refresh": "1.0.0-alpha.5",
+    "@rspack/cli": "1.0.0",
+    "@rspack/core": "1.0.0",
+    "@rspack/plugin-react-refresh": "1.0.0",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "react-refresh": "^0.14.0",
@@ -26,5 +25,6 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,css,md,json}": "biome format --write"
-  }
+  },
+  "packageManager": "pnpm@9.9.0"
 }
